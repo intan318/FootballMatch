@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+        >
+
+    <ProgressBar
+       android:id="@+id/progress_detail"
+       android:visibility="gone"
+       android:layout_centerInParent="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/ll_detail"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:orientation="vertical"
+       tools:context=".view.myActivity.PastMatchActivity">
+
+        <TextView
+        android:id="@+id/date_of_match"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/date_of_match"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:contentDescription="@string/home_badge"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/vs"
+            android:gravity="center"
+            android:layout_weight="3"
+            />
+
+        <ImageView
+            android:id="@+id/imgAway"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:contentDescription="@string/away_badge"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:id="@+id/nameHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/nameAway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/scoreHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/scoreAway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+            
+            <TextView
+                android:id="@+id/shotsHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="3dp"
+                android:gravity="start"
+                />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/shots"
+                android:textSize="11sp"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                 />
+            
+            <TextView
+                android:id="@+id/shotsAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"
+                />
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+
+            <TextView
+                android:id="@+id/goalsHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="start"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/goalscorer"
+                android:textSize="11sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/goalsAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+
+            <TextView
+                android:id="@+id/goalkeeperHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/goalkeeper"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/goalkeeperAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+
+            <TextView
+                android:id="@+id/defenseHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="start"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/defense"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/defenseAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:id="@+id/midfieldHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:text="@string/midfield"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/midfieldAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+            <TextView
+                android:id="@+id/forwardHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/forward"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/forwardAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:id="@+id/substitutesHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/substitutes"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/substitutesAway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

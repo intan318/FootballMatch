@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/match_date"
+            android:text="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_below="@+id/match_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAlignment="textEnd"
+                android:maxLines="1"
+                android:layout_weight="3"
+                android:text="@string/teamhome"
+                android:id="@+id/teamHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_weight="3"
+                android:id="@+id/score"
+                android:text="@string/score"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <TextView
+                android:textAlignment="viewStart"
+                android:maxLines="1"
+                android:layout_weight="3"
+                android:text="@string/teamaway"
+                android:id="@+id/teamAway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Football Match</string>
+    <string name="kosong">Kosong</string>
+    <string name="shots">Player</string>
+    <string name="goalscorer">Goalscorer</string>
+    <string name="goalkeeper">Goalkeeper</string>
+    <string name="defense">Defense</string>
+    <string name="midfield">Midfield</string>
+    <string name="forward">Forward</string>
+    <string name="substitutes">Substitutes</string>
+    <string name="home_badge">home_badge</string>
+    <string name="away_badge">away_badge</string>
+    <string name="vs">VS</string>
+    <string name="score">score</string>
+    <string name="teamhome">teamHome</string>
+    <string name="teamaway">teamAway</string>
+</resources>
